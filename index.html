@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loopling</title>
+<style>
+  :root {
+    --canvas: #F2F1F7;
+    --surface: #FFFFFF;
+    --text: #11131F;
+    --text-secondary: #5A5E78;
+    --accent: #4F46E5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --canvas: #0D0E1A;
+      --surface: #181A2E;
+      --text: #EEF0FF;
+      --text-secondary: #9BA0C0;
+      --accent: #818CF8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+    background: var(--canvas);
+    color: var(--text);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 64px 24px; }
+  h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.01em; margin: 0 0 24px; }
+  h2 { font-size: 22px; font-weight: 600; margin: 40px 0 12px; }
+  p, li { font-size: 17px; color: var(--text); }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { display: flex; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
+  nav a { padding: 10px 16px; background: var(--surface); border-radius: 10px; font-weight: 500; }
+  .hero { padding: 80px 0 24px; }
+  .tagline { font-size: 22px; color: var(--text-secondary); margin: 0 0 32px; }
+  footer { margin-top: 80px; font-size: 13px; color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>Loopling</h1>
+    <p class="tagline">Time loop puzzles. Rewind, and an echo of you replays every move you made — solve each level together with your past self.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </section>
+
+  <section>
+    <h2>What it is</h2>
+    <p>
+      Each level is a small grid with plates, doors, shards, and an exit — but you only get a few
+      moves per loop. Make your run count, then rewind: time scrubs back, you respawn, and a
+      translucent amber echo replays your recorded moves tick for tick alongside you. Echoes press
+      plates, hold doors open, collect shards — and physically block your path. The puzzle is
+      planning moves that help future-you instead of trapping him.
+    </p>
+    <h2>60 handcrafted levels</h2>
+    <p>
+      Five chapters, from gentle first steps to par-tight master loops with three of you on the
+      board at once. Chapters 1–2 are free. A single $3.99 purchase unlocks everything else —
+      one payment, yours forever, no subscriptions.
+    </p>
+    <h2>The Daily Echo</h2>
+    <p>
+      One shared puzzle every day — the same grid for everyone in the world, refreshing at UTC
+      midnight. Keep your streak alive and share your solve as a spoiler-free emoji grid. The
+      daily puzzle is always free.
+    </p>
+    <h2>Private by design</h2>
+    <p>
+      No ads, no analytics, no tracking, no account. Your progress stays on your device and the
+      game works fully offline. Purchases are processed by Apple; the only third-party code is the
+      RevenueCat SDK, used solely to validate the one-time Pro purchase.
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Ilia Filiaev. Loopling is a puzzle game — no ads, no tracking, works offline.
+  </footer>
+</div>
+</body>
+</html>
